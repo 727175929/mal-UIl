@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity
 
     private void initViewPager() {
         mViewPager = (ViewPager) findViewById(R.id.viewpager);
-        mTextView = (TextView) findViewById(R.id.text);
         mTabLayout = (TabLayout) findViewById(R.id.tab_layout2);
 
         mTabLayout.addTab(mTabLayout.newTab().setText("全部"));
@@ -85,16 +84,16 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 if(tab == mTabLayout.getTabAt(0)){
-                    mTextView.setText("0");
+
                 }
                 else if(tab == mTabLayout.getTabAt(1)){
-                    mTextView.setText("1");
+
                 }
                 else if(tab == mTabLayout.getTabAt(2)){
-                    mTextView.setText("2");
+
                 }
                 else if(tab == mTabLayout.getTabAt(3)){
-                    mTextView.setText("3");
+
                 }
             }
 
